@@ -27,7 +27,13 @@ $querylietke = mysqli_query($mysqli, $sql_lietke);
             <td><?php echo $row['tensp'] ?></td>
             <td><?php echo $row['sl'] ?></td>
             <td><?php echo $row['thanhtien'] ?></td>
-            <td><?php echo $row['trangthai'] ?></td>
+            <td>
+                <?php
+                if ($row['trangthai'] == 0) {
+                    echo ('Chưa xác nhận');
+                } else echo ("Đã xong");
+                ?>
+            </td>
             <td><a href="?action=quanlydathang&query=xn&iddathang=<?php echo $row['id_dathang'] ?>">Xác nhận</a></td>
         </tr>
     <?php
