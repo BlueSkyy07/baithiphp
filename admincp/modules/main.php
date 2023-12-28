@@ -26,5 +26,9 @@
         include("modules/quanlyadmin/dsadmin.php");
     } elseif (($tam == 'quanlyadmin' && $query == 'xoa')) {
         include("modules/quanlyadmin/xuly.php");
+    } elseif (($tam == 'quanlydathang' && $query == 'dsdh')) {
+        include("modules/quanlydathang/lietke.php");
+    } elseif (($tam == 'quanlydathang' && $query == 'xn')) {
+        include("modules/quanlydathang/xuly.php");
     } else include("modules/dashboard.php");
     ?>

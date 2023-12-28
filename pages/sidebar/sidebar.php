@@ -4,6 +4,7 @@ $queryloai = mysqli_query($mysqli, $sql_loai);
 ?>
 
 <div class="sidebar">
+    <h3 style="text-align: center;">Danh sách loại</h3>
     <form action="index.php" method="GET">
         <?php
         $i = 0;
